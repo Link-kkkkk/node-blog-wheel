@@ -27,7 +27,8 @@ exports.User = mongolass.model('User', {
   password: { type: 'string', required: true },
   avatar: { type: 'string', required: true },
   gender: { type: 'string', enum: ['m', 'f', 'x'], default: 'x' },
-  bio: { type: 'string', required: true }
+  bio: { type: 'string', required: true },
+  create_date: { type: 'string', default: '2018-01-01'}
 })
 exports.User.index({ name: 1 }, { unique: true }).exec()// 根据用户名找到用户，用户名全局唯一
 

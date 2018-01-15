@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const sha1 = require('sha1')
+const moment = require('moment')
 const express = require('express')
 const router = express.Router()
 
@@ -59,7 +60,8 @@ router.post('/', checkNotLogin, function (req, res, next) {
     password: password,
     gender: gender,
     bio: bio,
-    avatar: avatar
+    avatar: avatar,
+    create_date: moment().format('YYYY-MM-DD')
   }
   // 用户信息写入数据库
   UserModel.create(user)

@@ -82,3 +82,12 @@ input::-webkit-inner-spin-button {
 .signupContent .input_box {
   padding: 0 20%;
 }
+.createContent .person_card {
+  width: 20%;
+  margin-top: 1.75px;
+}
+.createContent .person_card .bio {
+  font-size: 12px;
+  padding-top: 5px;
+  color: rgba(0, 0, 0, 0.2);
+}

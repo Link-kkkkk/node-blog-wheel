@@ -1,0 +1,49 @@
+<%- include('../components/header') %>
+<link rel="stylesheet" href="/css/style.css">
+<div class="createContent">
+  <div class="ui grid">
+    <div class="ui special cards person_card">
+      <div class="card">
+        <div class="blurring dimmable image">
+          <div class="ui dimmer">
+            <div class="content">
+              <div class="center">
+                <div class="ui inverted button">In homepage</div>
+              </div>
+            </div>
+          </div>
+          <img src="/img/<%= user.avatar %>">
+        </div>
+        <div class="content">
+          <a class="header"><%= locals.user.name %></a>
+          <div class="meta">
+            <span class="date"><%= locals.user.create_date %></span>
+          </div>
+          <div class="bio">
+            <p>
+              <%= locals.user.bio %>
+            </p>
+          </div>
+        </div>
+        <div class="extra content">
+          <a><i class="users icon"></i> visitor </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ten wide column">
+      <form class="ui form segment" method="post">
+        <div class="field required">
+          <label>标题</label>
+          <input type="text" name="title">
+        </div>
+        <div class="field required">
+          <label>内容</label>
+          <textarea name="content" rows="15"></textarea>
+        </div>
+        <input type="submit" class="ui button" value="发布">
+      </form>
+    </div>
+  </div>
+</div>
+<%- include('../components/footer') %>

@@ -12,12 +12,12 @@ router.get('/', checkLogin, function (req, res, next) {
 
 // POST /posts/create 发表一篇文章
 router.post('/create', checkLogin, function (req, res, next) {
-  res.send('发表文章')
+  res.render('pages/create')
 })
 
 // GET /posts/create 发表文章页
 router.get('/create', checkLogin, function (req, res, next) {
-  res.send('发表文章页')
+  res.render('pages/create')
 })
 
 // GET /posts/:postId 单独一篇的文章页

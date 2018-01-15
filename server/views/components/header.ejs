@@ -11,7 +11,11 @@
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
   <title>
-    <%= locals.blog.title %>
+    <% if(locals.user != null){ %>
+      <%= locals.user.name  %>'s blog
+    <% } else { %>
+      blog
+    <% } %>
   </title>
 </head>
 
@@ -20,8 +24,8 @@
     <div class="header">
       <div class="signinContent">
         <p class="title">blog</p>
-        <% if(locals.blog.name != null){ %>
-        <p class="sub_title">author<%= locals.blog.name  %></p>
+        <% if(locals.user != null){ %>
+        <p class="sub_title">Master <%= locals.user.name  %></p>
         <% } else { %>
         <p class="sub_title">hello world</p>
         <% } %>
