@@ -4,7 +4,8 @@
   "description": "this is a blog demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start server/index.js --name 'blog'"
   },
   "author": "Link",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "express-winston": "^2.4.0",
     "gulp": "^3.9.1",
     "gulp-less": "^3.4.0",
+    "lodash": "^4.17.4",
     "marked": "^0.3.12",
     "moment": "^2.20.1",
     "mongolass": "^4.1.0",
@@ -26,5 +28,17 @@
     "package": "^1.0.1",
     "sha1": "^1.1.1",
     "winston": "^2.4.0"
+  },
+  "env": {
+    "NODE_ENV": "production",
+    "REMOTE_ADDR": "https://github.com/Link-kkkkk"
+  },
+  "env_dev": {
+    "NODE_ENV": "development",
+    "REMOTE_ADDR": "https://github.com/Link-kkkkk"
+  },
+  "env_test": {
+    "NODE_ENV": "test",
+    "REMOTE_ADDR": "https://github.com/Link-kkkkk"
   }
 }

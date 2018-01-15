@@ -52,7 +52,8 @@ app.use(require('express-formidable')({
 app.locals.blog = {
   title: pkg.name,
   description: pkg.description,
-  name: pkg.author
+  name: pkg.author,
+  create_date: '0000-00-00'
 }
 
 // 添加模板必需的三个变量

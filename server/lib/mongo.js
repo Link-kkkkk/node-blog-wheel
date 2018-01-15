@@ -1,4 +1,10 @@
-const config = require('config-lite')(__dirname)
+// const config = require('config-lite')(__dirname)
+const config = require('config-lite')({
+  filename: 'default',
+  config_basedir: __dirname,
+  config_dir: 'config',
+});
+
 const Mongolass = require('mongolass')
 const moment = require('moment')
 const objectIdToTimestamp = require('objectid-to-timestamp')
