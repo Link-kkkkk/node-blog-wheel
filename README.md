@@ -23,8 +23,9 @@ vue.js 前端框架<br>
 element-ui 饿了吗ui框架<br>
 gulp-less 实时转译less(webpack降级方案)<br>
 
+> node-server可以启用supervisor，可以实现http-server类似的效果，只是报错的话不会自动停止，在控制台会反复出现报错信息
 
-> ps:mongodb的使用需要自行安装
+> mongodb的使用需要自行安装
 - Windows 用户向导：https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
 - Linux 用户向导：https://docs.mongodb.com/manual/administration/install-on-linux/
 - Mac 用户向导：https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
