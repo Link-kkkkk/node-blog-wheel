@@ -9,7 +9,7 @@ const pkg = require('./../package')
 
 const app = express()
 
-app.setMaxListeners(99)
+app.setMaxListeners(0)
 // 设置模板目录
 app.set('views', path.join(__dirname, 'views'))
 // 设置模板引擎为 ejs
