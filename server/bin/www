@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../routes/index');
+var app = require('../index');
 var debug = require('debug')('demo:server');
 var http = require('http');
 
